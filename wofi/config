@@ -1,0 +1,3 @@
+[settings]
+# Theme to use
+theme = ~/.config/wofi/style.css
