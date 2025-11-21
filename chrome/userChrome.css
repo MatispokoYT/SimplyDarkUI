@@ -1,0 +1,66 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+:root {
+  --toolbarbutton-hover-background: rgba(21, 83, 158, 0.85) !important;
+}
+
+#TabsToolbar,
+#navigator-toolbox {
+    background: rgba(20, 20, 20, 1) !important;
+}
+
+.tabbrowser-tab .tab-background {
+    background: rgba(28, 28, 28, 0.70) !important;
+    border-radius: 16px !important;
+}
+
+#nav-bar {
+    background: rgba(28,28,28,0.70) !important;
+    border-radius: 16px !important;
+    margin: 4px 6px !important;
+}
+
+#urlbar-background {
+    border-radius: 16px !important;
+}
+
+#urlbar[focused] #urlbar-background {
+    background: rgba(40,40,40,0.7) !important;
+    border: 1px solid #2a88ff !important;
+}
+
+/* URL bar text */
+#urlbar-input {
+    color: white !important;
+    font-weight: 400 !important;
+}
+
+.tabbrowser-tab[selected] .tab-background {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-radius: 16px !important;
+}
+
+.tabbrowser-tab:hover .tab-background {
+    background: #2a2a2a !important;
+}
+
+/* {
+    background-color: rgba(21, 83, 158, 0.85) !important;
+    border-radius: 6px !important;
+}*/
+
+.titlebar-buttonbox-container { display: none !important; }
+
+#urlbar-background,
+#urlbar {
+  border-radius: 16px !important;
+  background-clip: padding-box !important; /* avoid bleeding */
+  box-shadow: none !important;
+  border: none !important;
+  margin: 2px !important; /* tweak if needed — helps avoid clipping */
+}
